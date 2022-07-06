@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 //#define task1
 //#define task2
@@ -9,36 +9,36 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef task1
-	cout << "Îïðåäåëåíèå êîìôîðòíû ëè óñëîâèÿ íà óëèöå. " << endl;
+	cout << "ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ñ„Ð¾Ñ€Ñ‚Ð½Ñ‹ Ð»Ð¸ ÑƒÑÐ»Ð¾Ð²Ð¸Ñ Ð½Ð° ÑƒÐ»Ð¸Ñ†Ðµ. " << endl;
 	double temperature;
-	cout << "Ââåäèòå òåìïåðàòóðó:"; cin >> temperature;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐ¼Ð¿ÐµÑ€Ð°Ñ‚ÑƒÑ€Ñƒ:"; cin >> temperature;
 	if (temperature > 0)
 	{
-		cout << "Íà óëèöå òåïëî." << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ‚ÐµÐ¿Ð»Ð¾." << endl;
 	}
 	else
 	{
-		cout << "Íà óëèöå õîëîäíî. " << endl;
+		cout << "ÐÐ° ÑƒÐ»Ð¸Ñ†Ðµ Ñ…Ð¾Ð»Ð¾Ð´Ð½Ð¾. " << endl;
 	}
 #endif task1
 #ifdef task2
-	cout << "Ïîïàäè â öåëü." << endl;
+	cout << "ÐŸÐ¾Ð¿Ð°Ð´Ð¸ Ð² Ñ†ÐµÐ»ÑŒ." << endl;
 	int purpose;
-	cout << "Ââåäèòå ÷èñëî:"; cin >> purpose;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾:"; cin >> purpose;
 	if (0 <= purpose && purpose <= 10)
 	{
-		cout << "Öåëü ïîðàæåíà." << endl;
+		cout << "Ð¦ÐµÐ»ÑŒ Ð¿Ð¾Ñ€Ð°Ð¶ÐµÐ½Ð°." << endl;
 	}
 	else
 	{
-		cout << "Âû ïðîìàõíóëèñü." << endl;
+		cout << "Ð’Ñ‹ Ð¿Ñ€Ð¾Ð¼Ð°Ñ…Ð½ÑƒÐ»Ð¸ÑÑŒ." << endl;
 	}
 #endif task2
 #ifdef task3
-	cout << "Êàëüêóëÿòîð." << endl;
+	cout << "ÐšÐ°Ð»ÑŒÐºÑƒÐ»ÑÑ‚Ð¾Ñ€." << endl;
 	double a, b;
 	char operand;
-	cout << "Ââåäèòå âûðàæåíèå:"; cin >> a >> operand >> b;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ:"; cin >> a >> operand >> b;
 
 	switch (operand)
 	{
@@ -48,7 +48,7 @@ void main()
 	case '/':
 		if (b == 0)
 		{
-			cout << "Îøèáêà äåëèòü íà íîëü íåëüçÿ." << endl;
+			cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð´ÐµÐ»Ð¸Ñ‚ÑŒ Ð½Ð° Ð½Ð¾Ð»ÑŒ Ð½ÐµÐ»ÑŒÐ·Ñ." << endl;
 		}
 		else
 		{
@@ -62,9 +62,9 @@ void main()
 
 #endif task3
 #ifdef task_4
-	double a, b; //×èñëà, ââîäèìûå ñ êëàâèàòóðû
-	char s; //Sign - çíàê îïåðàöèè
-	cout << "Ââåäèòå àðèôìåòè÷åñêîå âûðàæåíèå: ";
+	double a, b; //Ð§Ð¸ÑÐ»Ð°, Ð²Ð²Ð¾Ð´Ð¸Ð¼Ñ‹Ðµ Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹
+	char s; //Sign - Ð·Ð½Ð°Ðº Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ: ";
 	cin >> a >> s >> b;
 	//cout << a << s << b << endl;
 	do
@@ -87,7 +87,7 @@ void main()
 		}
 		else
 		{
-			cout << "Îøèáêà: íåò îïåðàöèè" << endl;
+			cout << "ÐžÑˆÐ¸Ð±ÐºÐ°: Ð½ÐµÑ‚ Ð¾Ð¿ÐµÑ€Ð°Ñ†Ð¸Ð¸" << endl;
 		}
 	}while
 #endif task_4
